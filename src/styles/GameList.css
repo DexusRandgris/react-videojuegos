@@ -1,0 +1,19 @@
+.game-li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-item {
+  background: #222;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.game-item img {
+  width: 100%;
+  border-radius: 10px;
+}

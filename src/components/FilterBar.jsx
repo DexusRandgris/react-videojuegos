@@ -8,7 +8,7 @@ import "../styles/FilterBar.css";
    - Al enviar el formulario, llama a `onFilterChange` con un objeto que contiene 
      únicamente los campos con valores no vacíos, evitando enviar parámetros vacíos a la API.
 */
-
+/**/
 const FilterBar = ({ onFilterChange }) => {
   const [filters, setFilters] = useState({
     name: "",

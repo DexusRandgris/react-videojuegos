@@ -47,14 +47,16 @@ const Home = () => {
         setGames([]);
       }
     };
-
+    // Llamamos a la función fetchData para obtener los juegos
+    // y aplicamos los filtros y búsqueda si es necesario
     fetchData();
   }, [filters, searchQuery]);
 
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
   };
-
+  // Separa la lógica de búsqueda y filtrado en un solo lugar
+  // para que sea más fácil de entender y mantener.
   return (
     <div className="home-container">
       <h1>Videojuegos Más Populares Según Metacritic</h1>

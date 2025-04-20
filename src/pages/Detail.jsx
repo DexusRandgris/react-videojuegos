@@ -20,7 +20,8 @@ const Detail = () => {
           setError('No se pudieron obtener los detalles del juego');
         }
       } catch (err) {
-        setError('Error al obtener los detalles del juego');
+        setError('Error al obtener los detalles del juego'); // Manejar errores
+      
         console.error(err);
       } finally {
         setLoading(false);
